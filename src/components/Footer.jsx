@@ -56,13 +56,13 @@ export default function Footer() {
           }}
         >
           <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            <Box sx={{ ml: '-15px' }}>
+            <Box>
               <img
                 src={
-                  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e6faf73568658154dae_SitemarkDefault.svg'
+                  '/kleandbmaiBlue.svg'
                 }
                 style={logoStyle}
-                alt="logo of sitemark"
+                alt="logo of kleandbm.ai"
               />
             </Box>
             <Typography variant="body2" fontWeight={600} gutterBottom>
@@ -111,9 +111,6 @@ export default function Footer() {
             Highlights
           </Link>
           <Link color="text.secondary" href="#">
-            Pricing
-          </Link>
-          <Link color="text.secondary" href="#">
             FAQs
           </Link>
         </Box>
@@ -125,16 +122,13 @@ export default function Footer() {
           }}
         >
           <Typography variant="body2" fontWeight={600}>
-            Company
+            Resources
           </Typography>
-          <Link color="text.secondary" href="#">
-            About us
+          <Link color="text.secondary" href="https://kleandbm.document360.io/">
+            Documentation
           </Link>
           <Link color="text.secondary" href="#">
-            Careers
-          </Link>
-          <Link color="text.secondary" href="#">
-            Press
+            Videos
           </Link>
         </Box>
         <Box
@@ -191,27 +185,11 @@ export default function Footer() {
         >
           <IconButton
             color="inherit"
-            href="https://github.com/mui"
-            aria-label="GitHub"
-            sx={{ alignSelf: 'center' }}
-          >
-            <FacebookIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
             href="https://twitter.com/MaterialUI"
             aria-label="X"
             sx={{ alignSelf: 'center' }}
           >
             <TwitterIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            href="https://www.linkedin.com/company/mui/"
-            aria-label="LinkedIn"
-            sx={{ alignSelf: 'center' }}
-          >
-            <LinkedInIcon />
           </IconButton>
         </Stack>
       </Box>
