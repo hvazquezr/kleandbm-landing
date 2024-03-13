@@ -138,7 +138,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 variant="contained"
                 size="small"
                 component="a"
-                href="https://app.kleanapi.ai/dashboard"
+                href="https://app.kleandbm.ai/dashboard"
               >
                 Sign in
               </Button>
