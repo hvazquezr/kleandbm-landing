@@ -35,7 +35,7 @@ export default function LogoCollection() {
       >
         Supported Data Platforms
       </Typography>
-      <Grid container justifyContent="center" sx={{ mt: 2}}>
+      <Grid container justifyContent="center" sx={{ mt: 5}}>
         {logos.map((logo, index) => (
           <Grid item key={index}>
             <img

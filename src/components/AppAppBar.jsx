@@ -135,23 +135,12 @@ function AppAppBar({ mode, toggleColorMode }) {
             >
               <Button
                 color="primary"
-                variant="text"
-                size="small"
-                component="a"
-                href="/material-ui/getting-started/templates/sign-in/"
-                target="_blank"
-              >
-                Sign in
-              </Button>
-              <Button
-                color="primary"
                 variant="contained"
                 size="small"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-up/"
-                target="_blank"
+                href="https://app.kleanapi.ai/dashboard"
               >
-                Sign up
+                Sign in
               </Button>
             </Box>
             <Box sx={{ display: { sm: '', md: 'none' } }}>
