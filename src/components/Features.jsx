@@ -5,38 +5,36 @@ import Card from '@mui/material/Card';
 import Chip from '@mui/material/Chip';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
-import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
-import EdgesensorHighRoundedIcon from '@mui/icons-material/EdgesensorHighRounded';
-import ViewQuiltRoundedIcon from '@mui/icons-material/ViewQuiltRounded';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';;
+import MessageIcon from '@mui/icons-material/Message';
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 
 const items = [
   {
-    icon: <ViewQuiltRoundedIcon />,
-    title: 'Dashboard',
+    icon: <TipsAndUpdatesIcon />,
+    title: 'Question-Driven Modeling',
     description:
-      'This item could provide a snapshot of the most important metrics or data points related to the product.',
-    imageLight: 'url("/static/images/templates/templates-images/dash-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/dash-dark.png")',
+      'Effortlessly generate database models tailored to your business needs by answering a few simple questions. Our AI algorithms understand your requirements and propose optimized structures, saving you time and effort.',
+    imageLight: 'url("/features/question_driven.png")',
+    imageDark: 'url("/features/question_driven.png")',
   },
   {
-    icon: <EdgesensorHighRoundedIcon />,
-    title: 'Mobile integration',
+    icon: <DesignServicesIcon />,
+    title: 'Customizable Naming Rules',
     description:
-      'This item could provide information about the mobile app version of the product.',
-    imageLight: 'url("/static/images/templates/templates-images/mobile-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/mobile-dark.png")',
+      'Maintain consistency and clarity across your database schema by specifying precise naming conventions. Tailor the rules to fit your organization\'s standards, ensuring every table and field adheres to your unique naming requirements.',
+      imageLight: 'url("/features/naming_rules.png")',
+      imageDark: 'url("/features/naming_rules.png")',
   },
   {
-    icon: <DevicesRoundedIcon />,
-    title: 'Available on all platforms',
+    icon: <MessageIcon />,
+    title: 'Natural Language Modifications',
     description:
-      'This item could let users know the product is available on all platforms, such as web, mobile, and desktop.',
-    imageLight: 'url("/static/images/templates/templates-images/devices-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/devices-dark.png")',
+      'Revolutionize the way you interact with your database. Easily add or modify tables using plain English instructions, thanks to our advanced AI language model. Say goodbye to complex queries and hello to seamless database management.',
+      imageLight: 'url("/features/nl_modifications.png")',
+      imageDark: 'url("/features/nl_modifications.png")',
   },
 ];
 
@@ -62,9 +60,7 @@ export default function Features() {
               color="text.secondary"
               sx={{ mb: { xs: 2, sm: 4 } }}
             >
-              Here you can provide a brief overview of the key features of the
-              product. For example, you could list the number of features, the types
-              of features, add-ons, or the benefits of the features.
+              Streamline your database design process effortlessly with our AI-powered solution. From initial concept to final implementation, our platform empowers you to create robust and efficient database models in record time.
             </Typography>
           </div>
           <Grid container item gap={1} sx={{ display: { xs: 'auto', sm: 'none' } }}>
@@ -110,6 +106,7 @@ export default function Features() {
                     : items[selectedItemIndex].imageDark,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat', 
                 minHeight: 280,
               }}
             />
@@ -120,23 +117,6 @@ export default function Features() {
               <Typography color="text.secondary" variant="body2" sx={{ my: 0.5 }}>
                 {selectedFeature.description}
               </Typography>
-              <Link
-                color="primary"
-                variant="body2"
-                fontWeight="bold"
-                sx={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  '& > svg': { transition: '0.2s' },
-                  '&:hover > svg': { transform: 'translateX(2px)' },
-                }}
-              >
-                <span>Learn more</span>
-                <ChevronRightRoundedIcon
-                  fontSize="small"
-                  sx={{ mt: '1px', ml: '2px' }}
-                />
-              </Link>
             </Box>
           </Box>
           <Stack
@@ -211,26 +191,6 @@ export default function Features() {
                     >
                       {description}
                     </Typography>
-                    <Link
-                      color="primary"
-                      variant="body2"
-                      fontWeight="bold"
-                      sx={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        '& > svg': { transition: '0.2s' },
-                        '&:hover > svg': { transform: 'translateX(2px)' },
-                      }}
-                      onClick={(event) => {
-                        event.stopPropagation();
-                      }}
-                    >
-                      <span>Learn more</span>
-                      <ChevronRightRoundedIcon
-                        fontSize="small"
-                        sx={{ mt: '1px', ml: '2px' }}
-                      />
-                    </Link>
                   </Box>
                 </Box>
               </Card>
@@ -255,9 +215,11 @@ export default function Features() {
             <Box
               sx={{
                 m: 'auto',
-                width: 420,
+                width: 500,
                 height: 500,
                 backgroundSize: 'contain',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
                 backgroundImage: (theme) =>
                   theme.palette.mode === 'light'
                     ? items[selectedItemIndex].imageLight

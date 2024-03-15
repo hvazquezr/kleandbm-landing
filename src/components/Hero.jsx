@@ -1,12 +1,11 @@
 import * as React from 'react';
 import { alpha } from '@mui/material';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import { TypeAnimation } from 'react-type-animation';
+
 
 export default function Hero() {
   return (
@@ -50,13 +49,25 @@ export default function Hero() {
                 color: (theme) => theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
               }}
             >
-              Database design
+              Database Modeling
             </Typography>
           </Typography>
-          <Typography variant="body1" textAlign="center" color="text.secondary">
-            Explore our cutting-edge dashboard, delivering high-quality solutions
-            tailored to your needs. <br />
-            Elevate your experience with top-tier features and services.
+          <Typography variant="overline" textAlign="center" color="text.secondary">
+          <TypeAnimation
+              preRenderFirstString={false}
+              sequence={[
+              500,
+              'What were last quarter\'s top-selling products?', 
+              1000,
+              'What\'s the connection between marketing spend and website traffic?',
+              1000,
+              'What possibilities await when you accelerate database modeling with AI?',
+              500,
+              ]}
+              speed={50}
+              style={{ fontSize: '1em', height:80, display: 'block' }}
+              repeat={0}
+          />
           </Typography>
         </Stack>
         <Box

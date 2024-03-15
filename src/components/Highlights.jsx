@@ -5,49 +5,28 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
-import ConstructionRoundedIcon from '@mui/icons-material/ConstructionRounded';
-import QueryStatsRoundedIcon from '@mui/icons-material/QueryStatsRounded';
-import SettingsSuggestRoundedIcon from '@mui/icons-material/SettingsSuggestRounded';
-import SupportAgentRoundedIcon from '@mui/icons-material/SupportAgentRounded';
-import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
+import SmartButtonIcon from '@mui/icons-material/SmartButton';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import SpeedIcon from '@mui/icons-material/Speed';
 
 const items = [
   {
-    icon: <SettingsSuggestRoundedIcon />,
-    title: 'Adaptable performance',
+    icon: <SmartButtonIcon />,
+    title: 'Clean Interface Design',
     description:
-      'Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.',
+      'Navigate with ease through a clutter-free interface designed by architects, focusing solely on essential tasks without unnecessary distractions.',
   },
   {
-    icon: <ConstructionRoundedIcon />,
-    title: 'Built to last',
+    icon: <AssignmentIcon />,
+    title: 'Compliance Alignment',
     description:
-      'Experience unmatched durability that goes above and beyond with lasting investment.',
+      'Ensure regulatory compliance effortlessly with detailed descriptions for all tables and fields, minimizing risks and enhancing data governance practices.',
   },
   {
-    icon: <ThumbUpAltRoundedIcon />,
-    title: 'Great user experience',
+    icon: <SpeedIcon />,
+    title: 'Enhanced Productivity',
     description:
-      'Integrate our product into your routine with an intuitive and easy-to-use interface.',
-  },
-  {
-    icon: <AutoFixHighRoundedIcon />,
-    title: 'Innovative functionality',
-    description:
-      'Stay ahead with features that set new standards, addressing your evolving needs better than the rest.',
-  },
-  {
-    icon: <SupportAgentRoundedIcon />,
-    title: 'Reliable support',
-    description:
-      'Count on our responsive customer support, offering assistance that goes beyond the purchase.',
-  },
-  {
-    icon: <QueryStatsRoundedIcon />,
-    title: 'Precision in every detail',
-    description:
-      'Enjoy a meticulously crafted product where small touches make a significant impact on your overall experience.',
+      'Maximize efficiency with streamlined database modeling, empowering teams to accomplish more in less time and drive business success.',
   },
 ];
 
@@ -81,9 +60,7 @@ export default function Highlights() {
             Highlights
           </Typography>
           <Typography variant="body1" sx={{ color: 'grey.400' }}>
-            Explore why our product stands out: adaptability, durability,
-            user-friendly design, and innovation. Enjoy reliable customer support and
-            precision in every detail.
+            Discover what makes our database modeling tool indispensable for architects, driving efficiency, compliance, and productivity in every project.
           </Typography>
         </Box>
         <Grid container spacing={2.5}>

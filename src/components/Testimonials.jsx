@@ -11,25 +11,24 @@ import { useTheme } from '@mui/system';
 
 const userTestimonials = [
   {
-    avatar: <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />,
-    name: 'Remy Sharp',
-    occupation: 'Senior Engineer',
+    avatar: <Avatar alt="Sarah Reynolds" src="/static/images/avatar/1.jpg" />,
+    name: 'Sarah Reynolds',
+    occupation: 'Data Architect',
     testimonial:
-      "I absolutely love how versatile this product is! Whether I'm tackling work projects or indulging in my favorite hobbies, it seamlessly adapts to my changing needs. Its intuitive design has truly enhanced my daily routine, making tasks more efficient and enjoyable.",
+      "This tool significantly improved our database design process. The AI-driven modeling saved us time, and the clean interface made navigation straightforward. Highly recommend it for any architect!",
   },
   {
-    avatar: <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />,
-    name: 'Travis Howard',
-    occupation: 'Lead Product Designer',
+    avatar: <Avatar alt="John Nguyen" src="/static/images/avatar/2.jpg" />,
+    name: 'John Nguyen',
+    occupation: 'Data Engineering Manager',
     testimonial:
-      "One of the standout features of this product is the exceptional customer support. In my experience, the team behind this product has been quick to respond and incredibly helpful. It's reassuring to know that they stand firmly behind their product.",
-  },
+"As a manager, I value tools that boost productivity. This app exceeded my expectations. Our team now delivers database models faster and with better compliance, thanks to its intuitive features."  },
   {
-    avatar: <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />,
-    name: 'Cindy Baker',
-    occupation: 'CTO',
+    avatar: <Avatar alt="Emily Patel" src="/static/images/avatar/3.jpg" />,
+    name: 'Emily Patel',
+    occupation: 'Database Analyst',
     testimonial:
-      'The level of simplicity and user-friendliness in this product has significantly simplified my life. I appreciate the creators for delivering a solution that not only meets but exceeds user expectations.',
+      'I appreciate how user-friendly this tool makes database models. With consistent naming conventions and detailed descriptions, it simplifies navigation and utilization, making my job much smoother.',
   },
 ];
 
@@ -83,9 +82,7 @@ export default function Testimonials() {
           Testimonials
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          See what our customers love about our products. Discover how we excel in
-          efficiency, durability, and satisfaction. Join us for quality, innovation,
-          and reliable support.
+        See what our users are saying about how our database modeling tool has transformed their processes and elevated their efficiency to new heights.
         </Typography>
       </Box>
       <Grid container spacing={2}>
@@ -117,11 +114,6 @@ export default function Testimonials() {
                   avatar={testimonial.avatar}
                   title={testimonial.name}
                   subheader={testimonial.occupation}
-                />
-                <img
-                  src={logos[index]}
-                  alt={`Logo ${index + 1}`}
-                  style={logoStyle}
                 />
               </Box>
             </Card>
