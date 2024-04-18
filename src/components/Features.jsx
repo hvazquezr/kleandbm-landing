@@ -16,7 +16,7 @@ const items = [
     icon: <TipsAndUpdatesIcon />,
     title: 'Driven by Business Questions',
     description:
-      'Effortlessly generate database models tailored to your business needs by answering a few simple questions. Our AI algorithms understand your requirements and propose optimized structures, saving you time and effort.',
+      'Effortlessly streamline your database design process with our AI-powered solution. Our platform empowers you to create robust and efficient database models from user-provided questions, eliminating the need for manual input and saving you time.',
     imageLight: 'url("/features/question_driven.png")',
     imageDark: 'url("/features/question_driven.png")',
   },
@@ -60,7 +60,7 @@ export default function Features() {
               color="text.secondary"
               sx={{ mb: { xs: 2, sm: 4 } }}
             >
-              Effortlessly streamline your database design process with our AI-powered solution. Our platform empowers you to create robust and efficient database models from user-provided questions, eliminating the need for manual input and saving you time.
+              Streamline your database design process effortlessly with our AI-powered solution. From initial concept to final implementation, our platform empowers you to create robust and efficient database models in record time.
             </Typography>
           </div>
           <Grid container item gap={1} sx={{ display: { xs: 'auto', sm: 'none' } }}>
