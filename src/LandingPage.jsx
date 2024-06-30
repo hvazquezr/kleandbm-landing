@@ -19,7 +19,12 @@ const LandingPage = () => {
       <div className="main-content">
         <img src={appLogo} alt="App Logo" className="app-logo" />
         <h1 className="headline"><span class="main-color">AI-Accelerated</span><br></br>Database Modeling</h1>
-        <Button variant="outlined">Get Started</Button>
+        <Button
+          variant="outlined"
+          component="a"
+          href="https://app.kleandbm.ai/dashboard"
+          size="large"
+        >Get Started</Button>
       </div>
       <Typography
         component="p"
