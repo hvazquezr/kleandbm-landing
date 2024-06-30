@@ -1,0 +1,56 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    padding: 0; /* Remove the padding here */
+  }
+  
+  .main-content {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 5rem; /* Add padding to move the content 20px from the left */
+  }
+  
+  .app-logo {
+    width: 200px; /* Adjust the size as needed */
+  }
+  
+  .headline {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    margin-top: 1.2rem;
+    color: #272341;
+  }
+
+  .main-color {
+    color:blue
+  }
+  
+  .subheadline {
+    font-size: 32px;
+  }
+  
+  .footer-logos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .db-logo {
+    width: 100px; /* Adjust the size as needed */
+    margin: 0 10px;
+  }
+  
