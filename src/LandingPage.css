@@ -16,13 +16,13 @@
     align-items: flex-start;
     margin-top: auto;
     margin-bottom: auto;
-    padding-left: 5rem; /* Add padding to move the content 20px from the left */
+    padding-left: 15rem; 
     opacity: 0;
-    animation: fadeInMove 2s forwards; /* Apply the animation */
+    animation: fadeInMove 2s forwards; 
   }
   
   .app-logo {
-    width: 200px; /* Adjust the size as needed */
+    width: 200px;
   }
   
   .headline {
@@ -69,3 +69,33 @@
     opacity: 0.6;
   }
   
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+    .main-content {
+      padding-left: 10rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .main-content {
+      padding-left: 7rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      padding-left: 5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .main-content {
+      padding-left: 1rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .main-content {
+      padding-left: 0.5rem;
+    }
+  }
