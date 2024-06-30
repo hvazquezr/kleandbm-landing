@@ -4,12 +4,11 @@ import { Typography, Button } from '@mui/material';
 import './LandingPage.css'; // Import the CSS file for styling
 
 // Import your logos
-import appLogo from '../public/kleandbmaiBlue.svg';
-import dbLogo1 from '../public/Snowflake_Logo.svg';
-import dbLogo2 from '../public/Databricks_Logo.svg';
-import dbLogo3 from '../public/SQLServer_Logo.png';
-import dbLogo4 from '../public/Mysql_Logo.svg';
-import heroImage from '../public/Hero.png';
+import appLogo from '/kleandbmaiBlue.svg';
+import dbLogo1 from '/Snowflake_Logo.svg';
+import dbLogo2 from '/Databricks_Logo.svg';
+import dbLogo3 from '/SQLServer_Logo.png';
+import dbLogo4 from '/Mysql_Logo.svg';
 
 
 const LandingPage = () => {
