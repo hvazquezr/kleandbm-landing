@@ -17,6 +17,8 @@
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 5rem; /* Add padding to move the content 20px from the left */
+    opacity: 0;
+    animation: fadeInMove 2s forwards; /* Apply the animation */
   }
   
   .app-logo {
@@ -34,8 +36,19 @@
     color: #272341;
   }
 
+  @keyframes fadeInMove {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px); /* Start position: 30px left */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End position: original position */
+    }
+  }
+
   .main-color {
-    color:blue
+    color: #1cb8f5
   }
   
   .subheadline {
@@ -51,7 +64,7 @@
   
   .db-logo {
     width: 'auto';
-    height: 20px;
+    height: 15px;
     margin: 0 32px;
     opacity: 0.6;
   }
