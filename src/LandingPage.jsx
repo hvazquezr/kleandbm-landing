@@ -1,4 +1,5 @@
 import React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
 import './LandingPage.css'; // Import the CSS file for styling
 
 // Import your logos
@@ -7,6 +8,7 @@ import dbLogo1 from '../public/Snowflake_Logo.svg';
 import dbLogo2 from '../public/Databricks_Logo.svg';
 import dbLogo3 from '../public/SQLServer_Logo.png';
 import dbLogo4 from '../public/Mysql_Logo.svg';
+
 
 const LandingPage = () => {
   return (
