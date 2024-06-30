@@ -9,6 +9,7 @@ import dbLogo1 from '../public/Snowflake_Logo.svg';
 import dbLogo2 from '../public/Databricks_Logo.svg';
 import dbLogo3 from '../public/SQLServer_Logo.png';
 import dbLogo4 from '../public/Mysql_Logo.svg';
+import heroImage from '../public/Hero.png';
 
 
 const LandingPage = () => {
